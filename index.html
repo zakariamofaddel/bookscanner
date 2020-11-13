@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="start-button-container">
+			<a class="btn" id="start-button">Scan a book</a>
+		</div>
+
+		<!-- BOOK SCANNER -->
+
+		<section id="scanner-container">
+			<div class="camera-body">
+				<div>
+					<video
+						id="video"
+						width="200"
+						height="133"
+						style="border: 1px solid gray"
+					></video>
+				</div>
+
+				<div
+					id="sourceSelectPanel"
+					style="display: none"
+					onchange="deviceChanged()"
+				>
+					<label for="sourceSelect">Change video source:</label>
+					<select id="sourceSelect" style="max-width: 400px"></select>
+				</div>
+			</div>
+
+			<form id="result-form">
+				<label>ISBN code:</label>
+				<input type="text" value="" id="search-input" readonly />
+				<a class="btn" id="add-button">Add book</a>
+			</form>
+
+			<div class="stop-button-container">
+				<a class="btn" id="stop-button">Stop Scanning</a>
+			</div>
+		</section>
+
+		<!-- BOOK LIST -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper" id="book-list"></div>
+		</div>
+
+		<!-- LOGIC SRC -->
+		<script src="./app.js"></script>
+		<!-- SWIPER SCRIPT -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<!-- GSAP CDN -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+			integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+			crossorigin="anonymous"
+		></script>
+		<!-- AXIOS CDN -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+			integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+			crossorigin="anonymous"
+		></script>
+		<!-- zxing cdn -->
+		<script
+			type="text/javascript"
+			src="https://unpkg.com/@zxing/library@latest"
+		></script>
+		<!-- GSAP.JS -->
+		<script src="./gsapanimation.js"></script>
+	</body>
+</html>
