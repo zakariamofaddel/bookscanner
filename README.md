@@ -8,7 +8,6 @@ Sections headers will be used to reference location of destination.
 
 - [Description](#description)
 - [How To Use](#how-to-use)
-- [References](#references)
 - [License](#license)
 - [Author Info](#author-info)
 
@@ -26,7 +25,7 @@ The idea for this project was inspired by my experience in a startup called 'Boo
 - Axios
 - SCSS
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#table-of-contents)
 
 ---
 
@@ -36,7 +35,7 @@ Once you're in the web app, click on the 'scan book' button and a little GSAP an
 Make sure to fit the barcode in the video box and wait for the code to be inserted in the input field.  
 Now click on add book and, if the ISBN code matches any code in the Open Library database, the book will be added to your list!
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#table-of-contents)
 
 ---
 
@@ -72,7 +71,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#table-of-contents)
 
 ---
 
@@ -81,4 +80,4 @@ SOFTWARE.
 - LinkedIn - [Zakaria Mofaddel](https://www.linkedin.com/in/zakaria-mofaddel-171351181/)
 - Portfolio - [Zakaria Mofaddel](https://zakariamofaddel.netlify.app/)
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#table-of-contents)
